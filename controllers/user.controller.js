@@ -1,16 +1,6 @@
-const { User } = require("../modals/user.modal")
+const User  = require("../modals/user.modal")
 
 
-exports.addUser = async (req , res)=>{
-    try{
-        const user = await User.create(req.body);
-        return res.send(user)
-    }catch(e){
-        return res.status(500).send(e.message)
-    }
-}
-
-const { User } = require("../modals/user.modal")
 
 
 exports.addUser = async (req , res)=>{
